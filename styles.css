@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+  background: #ffffff;
+  color: #1f2937;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.6;
+}
+.wrapper {
+  max-width: 1200px;
+  margin: 28px auto;
+  padding: 20px;
+}
+.slide {
+  margin-bottom: 28px;
+}
+.hero-top {
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+.hero-img {
+  width: 49%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 0;
+  display: block;
+}
+.hero-bottom {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 6px 12px;
+}
+.hero-name {
+  font-size: 48px;
+  font-weight: 700;
+  color: #11708a;
+}
+.hero-divider {
+  width: 6px;
+  height: 80px;
+  background: #c85b57;
+  border-radius: 4px;
+}
+.hero-info {
+  flex: 1;
+}
+.hero-info ul {
+  list-style: none;
+}
+.hero-info li {
+  font-size: 18px;
+  color: #111827;
+  line-height: 1.6;
+}
+.about {
+  display: flex;
+  gap: 30px;
+  align-items: stretch;
+  position: relative;
+}
+.about-left {
+  flex: 1;
+  padding: 48px 36px;
+  position: relative;
+}
+.accent-bar {
+  width: 8px;
+  height: 48px;
+  background: #c85b57;
+  position: absolute;
+  left: 18px;
+  top: 46px;
+  border-radius: 2px;
+}
+.about-left h2 {
+  font-size: 34px;
+  color: #11708a;
+  margin-left: 44px;
+  margin-bottom: 10px;
+}
+.about-line {
+  height: 2px;
+  background: #d1d5db;
+  width: 70%;
+  margin-left: 44px;
+  margin-bottom: 24px;
+}
+.about-text {
+  font-size: 16px;
+  color: #111827;
+  line-height: 1.6;
+  max-width: 520px;
+  margin-left: 44px;
+}
+.about-right {
+  flex: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+.about-top-img img,
+.about-bottom-img img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0;
+  display: block;
+}
+.about-top-img img {
+  height: 220px;
+}
+.about-bottom-img img {
+  height: 200px;
+}
+@media (max-width: 900px) {
+  .hero-img {
+    height: 200px;
+  }
+  .hero-name {
+    font-size: 36px;
+  }
+  .about {
+    flex-direction: column;
+  }
+  .about-left {
+    padding: 20px;
+  }
+  .about-left h2,
+  .about-line,
+  .about-text {
+    margin-left: 0;
+  }
+}
